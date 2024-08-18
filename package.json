@@ -1,0 +1,25 @@
+{
+  "version": "0.0.1",
+  "name": "chrome-fetch",
+  "type": "module",
+  "module": "dist/index.js",
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "neo773",
+    "url": "https://github.com/neo773/chrome-fetch"
+  },
+  "scripts": {
+    "build": "tsup index.ts --format cjs, esm --dts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsup": "^8.2.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "fetch-to-curl": "^0.6.0"
+  }
+}
